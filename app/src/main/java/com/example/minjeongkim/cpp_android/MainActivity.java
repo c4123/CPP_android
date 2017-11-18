@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     Boolean lgnFlag = false;
+    Boolean root = false;
     private EditText editTextEmail;
     private EditText editTextPassword ;
     private Button btnLogin;
@@ -44,11 +45,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    private void activityChange(boolean lgnFlag){
+    private void activityChange(boolean lgnFlag,boolean root){
         if(lgnFlag) {
-            Intent intent = new Intent(this, HomeActivity.class);
-            startActivity(intent);
-            finish();
+            if(!root) {
+                Intent intent = new Intent(this, HomeActivity.class);
+                startActivity(intent);
+                finish();
+            }
+            else{ // root 계정 로그인 intent/ activity 추가해야함. 
+
+            }
         }
         else
         {
@@ -66,8 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
                                 Toast.makeText(MainActivity.this, "login success", Toast.LENGTH_SHORT).show();
                                 FirebaseUser user = mAuth.getCurrentUser();
+                                if(user.getEmail().toString()=="root@gmail.com")
+                                    root=true;
                                 lgnFlag=true;
-                                activityChange(lgnFlag);
+                                activityChange(lgnFlag,root);
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Toast.makeText(MainActivity.this, "login failed.",
