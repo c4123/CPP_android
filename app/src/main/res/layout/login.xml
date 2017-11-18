@@ -4,18 +4,24 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center">
 
+
+
     <LinearLayout
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
             android:hint="ID"/>
         <EditText
+            android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
             android:hint="PASSWORD"/>
 
     </LinearLayout>
@@ -23,6 +29,9 @@
     <Button
         android:layout_width="80dp"
         android:layout_height="match_parent"
-        android:text="login"/>
+        android:text="login"
+        android:id="@+id/lgnBtn"
+        />
+
 
 </LinearLayout>
