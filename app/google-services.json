@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "757992844134",
+    "firebase_url": "https://cppandroid-33541.firebaseio.com",
+    "project_id": "cppandroid-33541",
+    "storage_bucket": "cppandroid-33541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757992844134:android:7a0c7fbedd3647b2",
+        "android_client_info": {
+          "package_name": "com.example.minjeongkim.cpp_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757992844134-hdi4vkglnvjalai13dofa87cug2hnj2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.minjeongkim.cpp_android",
+            "certificate_hash": "972f1ea6e280b32cd6e06e3e9639602af17cab12"
+          }
+        },
+        {
+          "client_id": "757992844134-kkmn2kt853fj7apc7cojgsigc1kg5f9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBva9UmUZQme5-qk7o_yGCoeRAAQsHpBA8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757992844134-kkmn2kt853fj7apc7cojgsigc1kg5f9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
