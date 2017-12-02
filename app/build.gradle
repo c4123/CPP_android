@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.example.minjeongkim.cpp_android"
-        minSdkVersion 17
+        minSdkVersion 18
         targetSdkVersion 26
         versionCode 1
         versionName "1.0"
@@ -28,6 +28,7 @@ dependencies {
     compile 'com.google.firebase:firebase-auth:11.2.0'
     compile 'com.dinuscxj:circleprogressbar:1.1.1'
 }
+
 
 
 

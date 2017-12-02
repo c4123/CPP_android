@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword ;
     private Button btnLogin;
+    private Button btnConnect;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,12 +36,19 @@ public class MainActivity extends AppCompatActivity {
         editTextEmail = (EditText) findViewById(R.id.emailInput);
         editTextPassword = (EditText) findViewById(R.id.passwordInput);
         btnLogin = (Button) findViewById(R.id.lgnBtn);
+        btnConnect=(Button) findViewById(R.id.connectBtn);
         mAuth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 login(editTextEmail.getText().toString(),editTextPassword.getText().toString());
+            }
+        });
+        btnConnect.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                connect();
             }
         });
 
@@ -85,6 +93,11 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
 
+        }
+        private void connect(){
+            Intent intent = new Intent(this, BluetoothActivity.class);
+            startActivity(intent);
+            finish();
         }
 }
 

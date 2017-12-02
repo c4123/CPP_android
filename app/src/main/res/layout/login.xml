@@ -26,12 +26,28 @@
 
     </LinearLayout>
 
-    <Button
-        android:layout_width="80dp"
-        android:layout_height="match_parent"
-        android:text="login"
-        android:id="@+id/lgnBtn"
-        />
 
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="connect"
+            android:id="@+id/connectBtn" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="login"
+            android:id="@+id/lgnBtn"
+            />
+
+    </LinearLayout>
 
 </LinearLayout>
+
+
